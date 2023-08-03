@@ -1,1 +1,1 @@
-for shell
+for shell projects
