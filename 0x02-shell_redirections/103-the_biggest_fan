@@ -1,0 +1,2 @@
+#!/bin/bash
+awk -F '\t' '{ hosts[$1]++ } END { for (host in hosts) print host, hosts[host] }' < webserver_logs.tsv | sort -k2,2nr | head -n 11
